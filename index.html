@@ -3,15 +3,15 @@
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="style.css" />
+        <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
         <title>Reservia</title>
     </head>
-    
+
     <body>
         <header>
             <div id="logo_reservia">
                 <img src="images/logo/Reservia@3x.png" alt="Logo Reservia" />
             </div>
-
             <nav>
                 <ul>
                     <li><a href="#">Hébergements</a></li>
@@ -20,128 +20,113 @@
                 </ul>
             </nav>
         </header>
-
         <section>
             <div>
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre de ville ou en pleine nature</p>
             </div>
-
             <div class="search">
-                <img src="images/icones/map-marker-alt-solid.svg" alt="map marker" />
+                <i class="fas fa-map-marker-alt"></i>
                 <form method="post" action="#">
                     <label for="rechercher">Rechercher</label>
                     <input type="text" name="search" id="search" />
                 </form>
             </div>
-            
-            <div id="filtres">
+            <div id="filters">
                 <p>Filtres</p>
-
                 <ul>
                     <li>
                         <a href="#" class="choix_filtre link-filter">
-                            <img src="images/icones/money-bill-wave-solid.svg" alt="money bill" />
+                            <i class="fas fa-money-bill-wave"></i>
                             Économique
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="choix_filtre">
-                            <img src="images/icones/child-solid.svg" alt="child" />
+                        <a href="#" class="filter_select">
+                            <i class="fas fa-child"></i>
                             Familial
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="choix_filtre">
-                            <img src="images/icones/heart-solid.svg" alt="heart" />
+                        <a href="#" class="filter_select">
+                            <i class="fas fa-heart"></i>
                             Romantique
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="choix_filtre">
-                            <img src="images/icones/dog-solid.svg" alt="dog" />
+                        <a href="#" class="filter_select">
+                            <i class="fas fa-dog"></i>
                             Animaux autorisés
                         </a>
                     </li>
                 </ul>
             </div>
-
-            <div id="info_logements">
-                <img src="images/icones/info-solid.svg" alt="info" />
+            <div id="info">
+                <i class="fas fa-info"></i>
                 Plus de 500 logements sont disponibles dans cette ville
             </div>
         </section>
-
         <section>
-            <div id="hebergement">
+            <div id="cards_1">
                 <h1>Hébergements à Marseille</h1>
-
                 <figure>
                     <div class="image_card">
-                        <img src="images/hebergements/3_medium/#" alt="images hébergements" />
+                        <img src="images/hebergements/3_medium/#" alt="card image" />
                     </div>
-
                     <figcaption>
                         <p>Nom de l'hébergement</p>
-
                         <p>Nuit à partir de ##€</p>
-
                         <div class="star_rating">
-                            <img src="images/icones/star-solid.svg" alt="star" />
-                            <img src="images/icones/star-solid.svg" alt="star" />
-                            <img src="images/icones/star-solid.svg" alt="star" />
-                            <img src="images/icones/star-solid.svg" alt="star" />
-                            <img src="images/icones/star-solid.svg" alt="star" />
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
                         </div>
                     </figcaption>
                 </figure>
             </div>
-
-            <div id="populaires">
+            <div id="cards_2">
                 <h1>Les plus populaires</h1>
-
                 <figure>
-                    <div class="image_hebergement">
-                        <img src="images/hebergements/3_medium/#" alt="images hébergements" />
+                    <div class="image_card">
+                        <img src="images/hebergements/3_medium/#" alt="card image" />
                     </div>
-
                     <figcaption>
                         <p>Nom de l'hébergement</p>
-
                         <p>Nuit à partir de ##€</p>
-
                         <div class="star_rating">
-                            <img src="images/icones/star-solid.svg" alt="star" />
-                            <img src="images/icones/star-solid.svg" alt="star" />
-                            <img src="images/icones/star-solid.svg" alt="star" />
-                            <img src="images/icones/star-solid.svg" alt="star" />
-                            <img src="images/icones/star-solid.svg" alt="star" />
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
                         </div>
                     </figcaption>
                 </figure>
             </div>
         </section>
-
         <section>
             <h1>Activités à Marseille</h1>
-
-            <figure>
-                <img src="images/activites/3_medium/#" alt="images activités" />
-                <figcaption>Nom de l'activité</figcaption>
-            </figure>
-
-            <div class="#">
+            <div class="cards_3">
                 <figure>
-                    <img src="images/activites/3_medium/#" alt="images activités" />
+                    <img src="images/activites/3_medium/#" alt="card image" />
                     <figcaption>Nom de l'activité</figcaption>
                 </figure>
+            </div>
+            <div class="cards_4">
                 <figure>
-                    <img src="images/activites/3_medium/#" alt="images activités" />
+                    <img src="images/activites/3_medium/#" alt="card image" />
+                    <figcaption>Nom de l'activité</figcaption>
+                </figure>
+            </div>
+            <div class="cards_5">
+                <figure>
+                    <img src="images/activites/3_medium/#" alt="card image" />
                     <figcaption>Nom de l'activité</figcaption>
                 </figure>
             </div>
         </section>
-
         <footer>
             <div class="footer">
                 <h2>A propos</h2>
@@ -151,7 +136,6 @@
                     <li><a href="#">Données et confidentialité</a></li>
                 </ul>
             </div>
-
             <div class="footer">
                 <h2>Nos hébergements</h2>
                 <ul>
@@ -159,8 +143,6 @@
                     <li><a href="#">Soumettre votre hôtel</a></li>
                 </ul>
             </div>
-        
-
             <div class="footer">
                 <h2>Assistance</h2>
                 <ul>
