@@ -51,6 +51,7 @@ section h1{
 }
 section p{
     font-size: 15px;
+    margin-bottom: 5px;
 }
 .search{
     display: flex;
@@ -100,6 +101,7 @@ form{
     border-radius: 25px 25px 25px 25px;
     padding: 10px;
     padding-left: 50px;
+    font-weight: bold;
 }
 #filters i{
     display: flex;
@@ -117,4 +119,15 @@ form{
 #filters li{
     display: flex;
     align-items: center;
+}
+#info{
+    display: flex;
+    align-items: center;
+}
+#info i{
+    color: #0065FC;
+    border: 3px #F2F2F2 solid;
+    border-radius: 20px;
+    padding: 5px 10px 5px 10px;
+    margin-right: 10px;
 }
