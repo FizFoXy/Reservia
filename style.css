@@ -85,30 +85,36 @@ form{
 }
 #filters{
     display: flex;
+    align-items: center;
 }
 #filters ul{
     list-style: none;
     display: flex;
     justify-content: space-around;
+    padding-left: 0px;
 }
 .filter_select{
     display: flex;
     align-items: center;
     border: 3px #F2F2F2 solid;
-    border-left: 0px;
-    border-radius: 0px 20px 20px 0px;
+    border-radius: 25px 25px 25px 25px;
     padding: 10px;
-    padding-left: 0px;
+    padding-left: 50px;
 }
-.filter_select i{
+#filters i{
     display: flex;
     align-items: center;
-    align-content: center;
+    justify-content: space-around;
     color: #0065FC;
     background: #DEEBFF;
-    padding: 10px;
-    margin-right: 10px;
-    border-radius: 20px;
+    padding: 12px;
+    border-radius: 25px;
     height: 20px;
-    width: auto;
+    width: 20px;
+    position: relative;
+    left: 42px;
+}
+#filters li{
+    display: flex;
+    align-items: center;
 }
