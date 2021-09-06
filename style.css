@@ -51,7 +51,7 @@ section h1{
 }
 section p{
     font-size: 15px;
-    margin-bottom: 5px;
+    margin: 10px 0px 10px 0px;
 }
 .search{
     display: flex;
