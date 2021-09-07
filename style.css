@@ -99,8 +99,7 @@ form{
     align-items: center;
     border: 3px #F2F2F2 solid;
     border-radius: 25px 25px 25px 25px;
-    padding: 10px;
-    padding-left: 50px;
+    padding: 10px 20px 10px 50px;
     font-weight: bold;
 }
 #filters i{
@@ -130,4 +129,72 @@ form{
     border-radius: 20px;
     padding: 5px 10px 5px 10px;
     margin-right: 10px;
+}
+#filters a:hover{
+    background-color: #0065FC;
+    color: #FFF;
+}
+#cards_main{
+    display: flex;
+    justify-content: space-between;
+}
+.cards_section{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#cards_block{
+    background: #F2F2F2;
+    border-radius: 30px;
+    padding: 35px;
+    margin-top: 20px;
+    height: fit-content;
+    width: fit-content;
+    height: 550px;
+    width: 800px;
+}
+.image_card img{
+    height: 90px;
+    width: 200px;
+    border-radius: 15px 15px 0px 0px;
+}
+.cards_content{
+    display: flex;
+    border: 3px #FFF solid;
+    border-radius: 20px;
+    background-color: #FFF;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0px 25px 25px 0px;
+    height: 160px;
+    width: 200px;
+}
+figure{
+    margin: 0px;
+}
+figcaption{
+    margin: 0px 5px 5px 5px;
+}
+figcaption h3{
+    font-size: 15px;
+    margin: 0px 0px 6px 0px;
+}
+figcaption p{
+    font-size: 12px;
+    margin: 0px 0px 6px 0px;
+}
+.star_rating{
+    margin-top: 6px;
+}
+
+
+#cards_aside{
+    background: #F2F2F2;
+    border-radius: 30px;
+    padding: 35px;
+    margin-top: 20px;
+    height: fit-content;
+    width: fit-content;
+    height: 550px;
+    width: 300px;
 }
