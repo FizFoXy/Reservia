@@ -13,6 +13,7 @@ header{
     display: flex;
     justify-content: space-between;
     height: 100px;
+    margin-bottom: 20px;
 }
 #logo_reservia img{
     height: 50%;
@@ -45,13 +46,13 @@ a, a:visited{
     text-decoration: none;
 }
 section h1{
-    font-size: 20px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: 20px;
 }
-section p{
+section .cards_section .cards_content p{
     font-size: 15px;
-    margin: 10px 0px 10px 0px;
+    margin: 15px 0px 10px 0px;
 }
 .search{
     display: flex;
@@ -68,7 +69,11 @@ section p{
 }
 input{
     height: 26px;
+    font-weight: bold;
 }
+input::placeholder{
+    color: #000;
+  }
 form{
     border: 2px #F2F2F2 solid;
     border-right: 0px;
@@ -80,7 +85,7 @@ form{
     background-color: #0065FC;
     color: #FFF;
     height: 12px;
-    width: 90px;
+    width: auto;
     padding: 10px;
     border-radius: 0px 10px 10px 0px;
 }
@@ -95,11 +100,8 @@ form{
     padding-left: 0px;
 }
 .filter_select{
-    display: flex;
-    align-items: center;
-    border: 3px #F2F2F2 solid;
-    border-radius: 25px 25px 25px 25px;
-    padding: 10px 20px 10px 50px;
+    padding: 5px 15px 5px 10px;
+    font-size: 14px;
     font-weight: bold;
 }
 #filters i{
@@ -112,25 +114,30 @@ form{
     border-radius: 25px;
     height: 20px;
     width: 20px;
-    position: relative;
-    left: 42px;
+    margin-left: -3px;
 }
 #filters li{
     display: flex;
     align-items: center;
+    border: 3px #F2F2F2 solid;
+    height: 40px;
+    width: auto;
+    border-radius: 25px;
+    margin-left: 30px;
 }
 #info{
     display: flex;
     align-items: center;
 }
 #info i{
+    font-size: 9px;
     color: #0065FC;
-    border: 3px #F2F2F2 solid;
+    border: 2px #F2F2F2 solid;
     border-radius: 20px;
-    padding: 5px 10px 5px 10px;
+    padding: 5px 8px 5px 8px;
     margin-right: 10px;
 }
-#filters a:hover{
+#filters li:hover{
     background-color: #0065FC;
     color: #FFF;
 }
@@ -138,7 +145,7 @@ form{
     display: flex;
     justify-content: space-between;
 }
-.cards_section{
+#cards_block .cards_section{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -146,55 +153,95 @@ form{
 #cards_block{
     background: #F2F2F2;
     border-radius: 30px;
-    padding: 35px;
-    margin-top: 20px;
-    height: fit-content;
-    width: fit-content;
-    height: 550px;
-    width: 800px;
+    padding: 30px 30px 0px 30px;
+    margin: 20px 30px 40px 0px;
+    height: auto;
+    width: 70%;
 }
-.image_card img{
+#cards_block .image_card img{
     height: 90px;
     width: 200px;
     border-radius: 15px 15px 0px 0px;
 }
-.cards_content{
+#cards_block .cards_content{
     display: flex;
-    border: 3px #FFF solid;
+    border: 5px #FFF solid;
     border-radius: 20px;
     background-color: #FFF;
     flex-direction: column;
     align-items: flex-start;
-    margin: 0px 25px 25px 0px;
-    height: 160px;
+    margin: 0px 0px 30px 0px;
+    height: auto;
     width: 200px;
+    box-shadow: 0px 0px 10px #c0c0c0;
 }
-figure{
+#cards_block figure{
     margin: 0px;
 }
-figcaption{
+#cards_block figcaption{
     margin: 0px 5px 5px 5px;
 }
-figcaption h3{
+#cards_block figcaption h3{
+    font-weight: bold;
     font-size: 15px;
-    margin: 0px 0px 6px 0px;
+    margin: 6px 0px 5px 5px;
 }
-figcaption p{
+#cards_block figcaption p{
     font-size: 12px;
-    margin: 0px 0px 6px 0px;
+    margin: 0px 0px 5px 5px;
 }
-.star_rating{
-    margin-top: 6px;
+#cards_block .star_rating{
+    color: #0065FC;
+    font-size: 10px;
+    margin: 7px 0px 0px 5px;
 }
-
-
+#cards_block .expand_button{
+    font-weight: bold;
+    font-size: 15px;
+}
+#cards_aside .image_card img{
+    height: 120px;
+    width: 110px;
+    border-radius: 15px 0px 0px 15px;
+}
 #cards_aside{
     background: #F2F2F2;
     border-radius: 30px;
-    padding: 35px;
-    margin-top: 20px;
-    height: fit-content;
-    width: fit-content;
-    height: 550px;
-    width: 300px;
+    padding: 30px 30px 0px 30px;
+    margin: 20px 0px 40px 0px;
+    height: auto;
+    width:30%;
+}
+#cards_aside figure{
+    display: flex;
+    margin: 0px 0px 0px 0px;
+}
+#cards_aside .cards_content{
+    display: flex;
+    border: 5px #FFF solid;
+    border-radius: 20px;
+    background-color: #FFF;
+    margin: 0px 0px 30px 0px;
+    height: 120px;
+    width: auto;
+    box-shadow: 0px 0px 10px #c0c0c0;
+}
+#cards_aside figcaption h3{
+    margin: 10px 0px 10px 10px;
+    font-weight: bold;
+    font-size: 15px;
+}
+#cards_aside figcaption p{
+    font-size: 12px;
+    margin: 0px 0px 10px 10px;
+}
+#cards_aside .star_rating{
+    color: #0065FC;
+    font-size: 10px;
+    margin: 0px 0px 10px 10px;
+}
+#cards_aside figcaption{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
