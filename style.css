@@ -146,6 +146,7 @@ form{
 #cards_main{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 10px;
 }
 #cards_block .cards_section{
     display: flex;
@@ -247,7 +248,6 @@ form{
 #cards_aside figcaption{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
 }
 #cards_aside .star_rating, #cards_block .star_rating{
     margin-top: auto;
@@ -305,4 +305,32 @@ form{
 .cards_bottom figcaption{
     font-weight: bold;
     margin: 15px 15px 15px 15px;
+}
+footer{
+    display: flex;
+    justify-content: flex-start;
+    background-color: #F2F2F2;
+    margin: 50px -50px 0px -50px;
+}
+footer div{
+    margin: 15px 180px 0px 50px;
+
+}
+footer div ul{
+    list-style: none;
+    padding-left: 0px;
+}
+footer h2{
+    font-size: 16px;
+    font-weight: bold;
+}
+footer li{
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+#cards_block .cards_content:nth-child(1) i:nth-child(5), #cards_block .cards_content:nth-child(3) i:nth-child(5), #cards_block .cards_content:nth-child(5) i:nth-child(5), #cards_aside .cards_content:nth-child(2) i:nth-child(5), #cards_aside .cards_content:nth-child(3) i:nth-child(5){
+    color: #d3d3d3;
+}
+#cards_block .cards_content:nth-child(4) i:nth-child(5), #cards_block .cards_content:nth-child(4) i:nth-child(4){
+    color: #d3d3d3;
 }
