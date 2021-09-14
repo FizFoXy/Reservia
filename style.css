@@ -5,7 +5,6 @@
          url("font/Raleway/static/Raleway-Bold.ttf") format("truetype"),
          url("font/Raleway/static/Raleway-ExtraBold.ttf") format("truetype");
     font-weight: normal;
-    font-size: normal;
 }
 body{
     font-family: "Raleway";
@@ -24,7 +23,6 @@ header{
 }
 nav ul{
     display: flex;
-    justify-content: right;
     list-style: none;
     height: 100px;
     margin: 0;
@@ -80,14 +78,12 @@ form{
     border: 2px #F2F2F2 solid;
     border-right: 0px;
 }
-.search p{
+.search a{
     display: flex;
     align-items: center;
-    align-content: center;
     background-color: #0065FC;
     color: #FFF;
     height: 12px;
-    width: auto;
     padding: 10px;
     border-radius: 0px 10px 10px 0px;
 }
@@ -95,10 +91,12 @@ form{
     display: flex;
     align-items: center;
 }
+#filters p{
+    font-weight: bold;
+}
 #filters ul{
     list-style: none;
     display: flex;
-    justify-content: space-around;
     padding-left: 0px;
 }
 .filter_select{
@@ -123,7 +121,6 @@ form{
     align-items: center;
     border: 3px #F2F2F2 solid;
     height: 40px;
-    width: auto;
     border-radius: 25px;
     margin-left: 30px;
 }
@@ -132,7 +129,7 @@ form{
     align-items: center;
 }
 #info i{
-    font-size: 9px;
+    font-size: 12px;
     color: #0065FC;
     border: 2px #F2F2F2 solid;
     border-radius: 20px;
@@ -145,7 +142,6 @@ form{
 }
 #cards_main{
     display: flex;
-    justify-content: space-between;
     margin-bottom: 10px;
 }
 #cards_block .cards_section{
@@ -158,25 +154,20 @@ form{
     border-radius: 30px;
     padding: 30px 30px 0px 30px;
     margin: 20px 30px 40px 0px;
-    height: auto;
     width: 70%;
 }
-#cards_block .image_card img{
-    height: 90px;
-    width: 200px;
+#cards_block img{
+    height: 100px;
+    width: 210px;
     border-radius: 15px 15px 0px 0px;
     object-fit: cover;
+    display: block;
 }
 #cards_block .cards_content{
-    display: flex;
     border: 5px #FFF solid;
     border-radius: 20px;
     background-color: #FFF;
-    flex-direction: column;
-    align-items: flex-start;
     margin: 0px 30px 30px 0px;
-    height: auto;
-    width: 200px;
     box-shadow: 0px 0px 10px #c0c0c0;
 }
 #cards_block figure{
@@ -203,18 +194,18 @@ form{
     font-weight: bold;
     font-size: 15px;
 }
-#cards_aside .image_card img{
+#cards_aside img{
     height: 120px;
     width: 110px;
     border-radius: 15px 0px 0px 15px;
     object-fit: cover;
+    display: block;
 }
 #cards_aside{
     background: #F2F2F2;
     border-radius: 30px;
     padding: 30px 30px 0px 30px;
     margin: 20px 0px 40px 0px;
-    height: auto;
     width:30%;
 }
 #cards_aside figure{
@@ -228,7 +219,6 @@ form{
     background-color: #FFF;
     margin: 0px 0px 30px 0px;
     height: 120px;
-    width: auto;
     box-shadow: 0px 0px 10px #c0c0c0;
 }
 #cards_aside figcaption h3{
@@ -288,11 +278,9 @@ form{
     display: flex;
     flex-direction: column;
     width: 50%;
-    justify-content: space-between;
 }
 .cards_bottom_aside a{
     margin-right: 0px;
-    height: 50%;
     width: 100%;
 }
 .cards_bottom_aside a:nth-child(1){
@@ -308,7 +296,6 @@ form{
 }
 footer{
     display: flex;
-    justify-content: flex-start;
     background-color: #F2F2F2;
     margin: 50px -50px 0px -50px;
 }
@@ -328,9 +315,6 @@ footer li{
     padding-bottom: 10px;
     font-size: 15px;
 }
-#cards_block .cards_content:nth-child(1) i:nth-child(5), #cards_block .cards_content:nth-child(3) i:nth-child(5), #cards_block .cards_content:nth-child(5) i:nth-child(5), #cards_aside .cards_content:nth-child(2) i:nth-child(5), #cards_aside .cards_content:nth-child(3) i:nth-child(5){
-    color: #d3d3d3;
-}
-#cards_block .cards_content:nth-child(4) i:nth-child(5), #cards_block .cards_content:nth-child(4) i:nth-child(4){
+#cards_block .cards_content:nth-child(1) i:nth-child(5), #cards_block .cards_content:nth-child(3) i:nth-child(5), #cards_block .cards_content:nth-child(5) i:nth-child(5), #cards_aside .cards_content:nth-child(2) i:nth-child(5), #cards_aside .cards_content:nth-child(3) i:nth-child(5), #cards_block .cards_content:nth-child(4) i:nth-child(5), #cards_block .cards_content:nth-child(4) i:nth-child(4){
     color: #d3d3d3;
 }
