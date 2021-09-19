@@ -16,10 +16,10 @@ header{
     height: 100px;
     margin-bottom: 20px;
 }
-#logo_reservia img{
+header img{
     height: 50%;
-    width: auto;
     margin-top: 50px;
+    object-fit: scale-down;
 }
 nav ul{
     display: flex;
@@ -28,7 +28,6 @@ nav ul{
     margin: 0;
 }
 nav li{
-    display: flex;
     padding: 70px 35px 0px 35px;
 }
 nav li:hover{
@@ -46,6 +45,8 @@ a, a:visited{
     text-decoration: none;
 }
 section h1{
+    display: flex;
+    justify-content: space-between;
     font-size: 18px;
     margin-top: 0px;
     margin-bottom: 20px;
@@ -63,8 +64,8 @@ section .cards_section .cards_content p{
     align-items: center;
     justify-content: space-around;
     background-color: #F2F2F2;
-    height: 36px;
-    width: 36px;
+    height: 32px;
+    width: 32px;
     border-radius: 10px 0px 0px 10px;
 }
 input{
@@ -74,10 +75,6 @@ input{
 input::placeholder{
     color: #000;
   }
-form{
-    border: 2px #F2F2F2 solid;
-    border-right: 0px;
-}
 .search a{
     display: flex;
     align-items: center;
@@ -86,6 +83,9 @@ form{
     height: 12px;
     padding: 10px;
     border-radius: 0px 10px 10px 0px;
+}
+.search a i{
+    display: none;
 }
 #filters{
     display: flex;
@@ -193,6 +193,9 @@ form{
 #cards_block .expand_button{
     font-weight: bold;
     font-size: 15px;
+}
+section p{
+    margin: 10px 0px 20px 0px;
 }
 #cards_aside img{
     height: 120px;
@@ -317,4 +320,187 @@ footer li{
 }
 #cards_block .cards_content:nth-child(1) i:nth-child(5), #cards_block .cards_content:nth-child(3) i:nth-child(5), #cards_block .cards_content:nth-child(5) i:nth-child(5), #cards_aside .cards_content:nth-child(2) i:nth-child(5), #cards_aside .cards_content:nth-child(3) i:nth-child(5), #cards_block .cards_content:nth-child(4) i:nth-child(5), #cards_block .cards_content:nth-child(4) i:nth-child(4){
     color: #d3d3d3;
+}
+@media screen and (max-width: 426px)
+{
+    body{
+        font-family: "Raleway";
+        margin: 0px 20px 0px 20px;
+    }
+    header{
+        flex-direction: column;
+    }
+    header img{
+        margin-top: 0px;
+        width: 30%;
+    }
+    nav ul{
+        padding: 0px;
+        height: 25px;
+    }
+    nav li{
+        padding: 0px;
+        border-bottom: 2px #F2F2F2 solid;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+    nav li:hover{
+        border-top: none;
+        border-bottom: 2px #0065FC solid;
+        padding-top: 0px;
+    }
+    .sign_in{
+        border-bottom: none;
+        position: absolute;
+        left: 250px;
+        top: 20px;
+    }
+    nav .sign_in:hover{
+        border-bottom: none;
+    }
+    section h1{
+        margin-bottom: 0px;
+    }
+    .search a i{
+        display: flex;
+        background-color: #0065FC;
+        height: 12px;
+    }
+    .search a p{
+        display: none;
+    }
+    .search a{
+        padding: 10px 0px 10px 0px;
+    }
+    #filters{
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 10px 0px 0px 0px;
+    }
+    #filters p{
+        margin-bottom: 0px;
+    }
+    #filters ul{
+        flex-wrap: wrap;
+    }
+    #filters li{
+        margin: 0px 10px 10px 0px;
+    }
+    #info{
+        align-items: flex-start;
+    }
+    #info p{
+        margin-bottom: 10px;
+    }
+    #cards_main{
+        flex-direction: column-reverse;
+        margin-bottom: 0px;
+    }
+    #cards_block .cards_section{
+        flex-direction: column;
+    }
+    #cards_block{
+        background: none;
+        border-radius: 0px;
+        padding: 20px 20px 0px 20px;
+        margin: 0px -20px 0px -20px;
+        width: 100%;
+    }
+    #cards_block .cards_content{
+        margin: 0px 0px 20px 0px;
+        padding: 5px;
+        border: none;
+    }
+    #cards_block img{
+        width: 100%;
+    }
+    section p{
+        margin: 0px 0px 20px 0px;
+    }
+    #cards_aside img{
+        height: 120px;
+        width: 110px;
+        border-radius: 15px 0px 0px 15px;
+        object-fit: cover;
+        display: block;
+    }
+    #cards_aside{
+        border-radius: 0px;
+        padding: 20px 20px 0px 20px;
+        margin: 20px -20px 0px -20px;
+        width:100%;
+    }
+    #cards_aside h1, #cards_block h1{
+        margin-bottom: 20px;
+    }
+    #cards_aside figure{
+        display: flex;
+        margin: 0px 0px 0px 0px;
+    }
+    #cards_other h1{
+        margin-bottom: 20px;
+    }
+    .cards_bottom{
+        flex-direction: column;
+        height: auto;
+        width:100%;
+    }
+    .cards_bottom img{
+        height: 100px;
+    }
+    #cards_secondary{
+        flex-direction: column;
+    }
+    .cards_bottom a{
+        margin-right: 0px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .cards_bottom:nth-child(1){
+        margin-right: 0px;
+    }
+    .cards_bottom_aside{
+        width: 100%;
+    }
+    .cards_bottom_aside a{
+        margin-right: 0px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .cards_bottom_aside a:nth-child(1){
+        margin-bottom: 20px;
+        height: 100%;
+    }
+    .cards_bottom_aside a:nth-child(2){
+        height: 100%;
+    }
+    .cards_bottom figcaption{
+        font-weight: bold;
+        margin: 15px 15px 15px 15px;
+    }
+    footer{
+        display: flex;
+        background-color: #F2F2F2;
+        margin: 50px -50px 0px -50px;
+    }
+    footer div{
+        margin: 15px 180px 0px 50px;
+    
+    }
+    footer div ul{
+        list-style: none;
+        padding-left: 0px;
+    }
+    footer h2{
+        font-size: 16px;
+        font-weight: bold;
+    }
+    footer li{
+        padding-bottom: 10px;
+        font-size: 15px;
+    }
+    #cards_block .cards_content:nth-child(1) i:nth-child(5), #cards_block .cards_content:nth-child(3) i:nth-child(5), #cards_block .cards_content:nth-child(5) i:nth-child(5), #cards_aside .cards_content:nth-child(2) i:nth-child(5), #cards_aside .cards_content:nth-child(3) i:nth-child(5), #cards_block .cards_content:nth-child(4) i:nth-child(5), #cards_block .cards_content:nth-child(4) i:nth-child(4){
+        color: #d3d3d3;
+    }
 }
