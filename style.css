@@ -15,19 +15,19 @@ body{
 header{
     display: flex;
     justify-content: space-between;
-    height: 100px;
+    height: auto;
     margin: 0px 50px 20px 50px;
 }
 header img{
-    height: 50%;
+    height: 50px;
     margin-top: 50px;
     object-fit: scale-down;
 }
 nav ul{
     display: flex;
     list-style: none;
-    height: 100px;
     margin: 0;
+    padding: 0px;
 }
 nav li{
     padding: 70px 35px 0px 35px;
@@ -102,6 +102,7 @@ input::placeholder{
     font-weight: bold;
 }
 #filters ul{
+    margin-top: 10px;
     list-style: none;
     display: flex;
     padding-left: 0px;
@@ -130,7 +131,7 @@ input::placeholder{
     border: 3px #F2F2F2 solid;
     height: 40px;
     border-radius: 25px;
-    margin-left: 30px;
+    margin: 10px 0px 0px 30px;
 }
 #info{
     display: flex;
@@ -172,6 +173,7 @@ input::placeholder{
     display: block;
 }
 #cards_block figure{
+    height: 94%;
     margin: 0px;
     border: 5px #FFF solid;
     border-radius: 20px;
@@ -179,8 +181,8 @@ input::placeholder{
     box-shadow: 0px 0px 10px #c0c0c0;
 }
 #cards_block a{
-    width: 29%;
-    margin: 0px 30px 30px 0px;
+    width: 30%;
+    margin-bottom: 25px;
     border-radius: 20px;
 }
 #cards_block figcaption{
@@ -204,6 +206,9 @@ input::placeholder{
     margin-top: 10px;
 }
 #cards_block .expand_button{
+    margin: 10px 0px 10px 0px;
+}
+#cards_block .expand_button a{
     font-weight: bold;
     font-size: 15px;
     margin: 0px;
@@ -248,6 +253,7 @@ section p{
     margin: 10px 0px 10px 10px;
     font-weight: bold;
     font-size: 15px;
+    width: 70%;
 }
 #cards_aside figcaption p{
     font-size: 12px;
@@ -331,11 +337,12 @@ footer div{
 }
 footer div ul{
     list-style: none;
-    padding-left: 0px;
+    padding-left: 50px;
 }
 footer h2{
     font-size: 16px;
     font-weight: bold;
+    padding-left: 50px;
 }
 footer li{
     padding-bottom: 10px;
@@ -344,7 +351,138 @@ footer li{
 #cards_block a:nth-child(1) i:nth-child(5), #cards_block a:nth-child(3) i:nth-child(5), #cards_block a:nth-child(5) i:nth-child(5), #cards_aside a:nth-child(2) i:nth-child(5), #cards_aside a:nth-child(3) i:nth-child(5), #cards_block a:nth-child(4) i:nth-child(5), #cards_block a:nth-child(4) i:nth-child(4){
     color: #d3d3d3;
 }
-@media screen and (max-width: 426px)
+@media screen and (max-width: 769px)
+{
+    header{
+        margin: 0px 20px 20px 20px;
+        flex-wrap: wrap;
+    }
+    #top{
+        margin: 30px 20px 0px 20px;
+    }
+    section h1{
+        margin-bottom: 0px;
+    }
+    .search a i{
+        display: flex;
+        background-color: #0065FC;
+        height: 12px;
+    }
+    .search a p{
+        display: none;
+    }
+    .search a{
+        padding: 10px 0px 10px 0px;
+        border-radius: 10px;
+        margin-left: -10px;
+    }
+    #filters{
+        flex-direction: column;
+        margin: 10px 0px 0px 0px;
+    }
+    #filters p{
+        margin-bottom: 0px;
+    }
+    #filters ul{
+        margin-top: 20px;
+    }
+    #filters li{
+        margin: 0px 10px 10px 0px;
+    }
+    #info p{
+        margin-bottom: 0px;
+    }
+    #cards_main{
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 0px;
+        padding: 20px 20px 0px 20px;
+    }
+    #cards_block{
+        margin: 0px;
+        padding: 20px;
+        width: auto;
+    }
+    #cards_block a{
+        width: 48%;
+        margin: 0px 0px 20px 0px;
+    }
+    section p{
+        margin: 10px 0px 25px 0px;
+    }
+    #cards_aside{
+        margin: 0px 0px 20px 0px;
+        padding: 20px;
+        width: 100%;
+        max-width: 688px;
+    }
+    #cards_aside .cards_section{
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    #cards_aside a{
+        margin-bottom: 0px;
+        width: 31%;
+    }
+    #cards_aside figure{
+        flex-direction: column;
+        height: 97%;
+    }
+    #cards_aside figcaption {
+        width: 100%;
+        height: 100%;
+    }
+    #cards_aside img{
+        width: auto;
+        border-radius: 15px 15px 0px 0px;
+    }
+    #cards_aside h1, #cards_block h1{
+        margin-bottom: 20px;
+    }
+    #cards_other{
+        margin: 30px 20px 0px 20px;
+    }
+    #cards_other h1{
+        margin-bottom: 20px;
+    }
+    .cards_bottom{
+        flex-direction: column;
+        height: auto;
+        width:100%;
+    }
+    .cards_bottom img{
+        height: 100px;
+    }
+    .cards_bottom a{
+        margin-right: 0px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .cards_bottom:nth-child(1){
+        margin-right: 20px;
+    }
+    .cards_bottom_aside{
+        width: 100%;
+    }
+    .cards_bottom_aside a{
+        margin-right: 0px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .cards_bottom_aside a:nth-child(1){
+        margin-bottom: 20px;
+        height: 100%;
+    }
+    .cards_bottom_aside a:nth-child(2){
+        height: 100%;
+    }
+    footer div ul, footer div h2{
+        padding-left: 20px;
+    }
+}
+@media screen and (max-width: 601px)
 {
     header{
         flex-direction: column;
@@ -353,10 +491,6 @@ footer li{
     header img{
         margin: 10px 0px 0px 10px;
         width: 30%;
-    }
-    nav ul{
-        padding: 0px;
-        height: 25px;
     }
     nav li{
         padding: 0px;
@@ -370,6 +504,27 @@ footer li{
         border-bottom: 2px #0065FC solid;
         padding-top: 0px;
     }
+    nav ul{
+        padding-top: 20px;
+    }
+    footer{
+        flex-direction: column;
+        margin: 20px 0px 0px 0px;
+        padding-top: 10px;
+    }
+    footer div{
+        margin: 0px 20px 0px 20px;
+        width: auto;
+    }
+    footer div ul, footer div h2{
+        padding-left: 0px;
+    }
+    #cards_secondary{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 426px)
+{
     .sign_in{
         border-bottom: none;
         position: absolute;
@@ -401,14 +556,13 @@ footer li{
     }
     #filters{
         flex-direction: column;
-        align-items: flex-start;
         margin: 10px 0px 0px 0px;
     }
     #filters p{
         margin-bottom: 0px;
     }
     #filters ul{
-        flex-wrap: wrap;
+        width: 94%;
     }
     #filters li{
         margin: 0px 10px 10px 0px;
@@ -416,20 +570,14 @@ footer li{
     #info p{
         margin-bottom: 0px;
     }
-    #cards_main{
-        flex-direction: column-reverse;
-        margin: 0px;
-        padding: 20px 20px 0px 20px;
-    }
     #cards_block .cards_section{
         flex-direction: column;
     }
     #cards_block{
         background: none;
         border-radius: 0px;
-        padding: 20px 20px 0px 20px;
-        margin: 0px -20px 0px -20px;
         width: 100%;
+        padding-top: 0px;
     }
     #cards_block a{
         width: auto;
@@ -438,19 +586,34 @@ footer li{
     section p{
         margin: 10px 0px 25px 0px;
     }
+    #cards_aside .cards_section {
+        flex-direction: column;
+    }
     #cards_aside{
         border-radius: 0px;
-        padding: 20px 20px 0px 20px;
-        margin: 0px -20px 0px -20px;
-        width: auto;
+        padding: 20px;
+        margin: 0px 0px 25px 0px;
+        width: 100%;
     }
     #cards_aside a{
         margin-bottom: 20px;
+        width: auto;
+    }
+    #cards_aside figure {
+        flex-direction: row;
+    }
+    #cards_aside figcaption {
+        width: 60%;
+        height: auto;
+    }
+    #cards_aside img {
+        width: 40%;
+        border-radius: 15px 0px 0px 15px;
     }
     #cards_aside h1, #cards_block h1{
         margin-bottom: 20px;
     }
-    #cards_other {
+    #cards_other{
         margin: 10px 20px 0px 20px;
     }
     #cards_other h1{
@@ -464,9 +627,6 @@ footer li{
     .cards_bottom img{
         height: 100px;
     }
-    #cards_secondary{
-        flex-direction: column;
-    }
     .cards_bottom a{
         margin-right: 0px;
         width: 100%;
@@ -474,29 +634,5 @@ footer li{
     }
     .cards_bottom:nth-child(1){
         margin-right: 0px;
-    }
-    .cards_bottom_aside{
-        width: 100%;
-    }
-    .cards_bottom_aside a{
-        margin-right: 0px;
-        width: 100%;
-        margin-bottom: 20px;
-    }
-    .cards_bottom_aside a:nth-child(1){
-        margin-bottom: 20px;
-        height: 100%;
-    }
-    .cards_bottom_aside a:nth-child(2){
-        height: 100%;
-    }
-    footer{
-        flex-direction: column;
-        margin: 20px 0px 0px 0px;
-        padding-top: 10px;
-    }
-    footer div{
-        margin: 0px 20px 0px 20px;
-        width: auto;
     }
 }
