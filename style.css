@@ -19,7 +19,7 @@ header{
     margin: 0px 50px 20px 50px;
 }
 header img{
-    height: 50px;
+    height: 100px;
     margin-top: 50px;
     object-fit: scale-down;
 }
@@ -30,7 +30,8 @@ nav ul{
     padding: 0px;
 }
 nav li{
-    padding: 70px 35px 0px 35px;
+    font-size: 30px;
+    padding: 130px 35px 0px 35px;
 }
 nav li:hover{
     color: #0065FC;
@@ -52,7 +53,7 @@ a, a:visited{
 section h1{
     display: flex;
     justify-content: space-between;
-    font-size: 18px;
+    font-size: 30px;
     margin-top: 0px;
     margin-bottom: 20px;
 }
@@ -68,13 +69,15 @@ section .cards_section a p{
     align-items: center;
     justify-content: space-around;
     background-color: #F2F2F2;
-    height: 32px;
-    width: 32px;
+    height: 60px;
+    width: 60px;
     border-radius: 10px 0px 0px 10px;
 }
 input{
-    height: 26px;
+    height: 55px;
+    width: 400px;
     font-weight: bold;
+    font-size: 20px;
     border: 2px #F2F2F2 solid;
     padding-left: 10px;
     margin-left: -1px;
@@ -87,8 +90,8 @@ input::placeholder{
     align-items: center;
     background-color: #0065FC;
     color: #FFF;
-    height: 12px;
-    padding: 10px;
+    height: 20px;
+    padding: 20px;
     border-radius: 0px 10px 10px 0px;
 }
 .search a i{
@@ -110,7 +113,7 @@ input::placeholder{
 }
 .filter_select{
     padding: 5px 15px 5px 10px;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: bold;
 }
 #filters i{
@@ -120,17 +123,17 @@ input::placeholder{
     color: #0065FC;
     background: #DEEBFF;
     padding: 12px;
-    border-radius: 25px;
-    height: 20px;
-    width: 20px;
+    border-radius: 40px;
+    height: 40px;
+    width: 40px;
     margin-left: -3px;
 }
 #filters li{
     display: flex;
     align-items: center;
     border: 3px #F2F2F2 solid;
-    height: 40px;
-    border-radius: 25px;
+    height: 60px;
+    border-radius: 40px;
     margin: 10px 0px 0px 30px;
 }
 #info{
@@ -166,14 +169,14 @@ input::placeholder{
     width: 70%;
 }
 #cards_block img{
-    height: 100px;
+    height: 200px;
     width: 100%;
     border-radius: 15px 15px 0px 0px;
     object-fit: cover;
     display: block;
 }
 #cards_block figure{
-    height: 94%;
+    height: 300px;
     margin: 0px;
     border: 5px #FFF solid;
     border-radius: 20px;
@@ -181,7 +184,7 @@ input::placeholder{
     box-shadow: 0px 0px 10px #c0c0c0;
 }
 #cards_block a{
-    width: 30%;
+    width: 31%;
     margin-bottom: 25px;
     border-radius: 20px;
 }
@@ -190,34 +193,35 @@ input::placeholder{
 }
 #cards_block figcaption h3{
     font-weight: bold;
-    font-size: 15px;
+    font-size: 25px;
     margin: 6px 0px 5px 5px;
 }
 #cards_block figcaption p{
-    font-size: 12px;
+    font-size: 20px;
     margin: 0px 0px 5px 5px;
 }
 #cards_block .star_rating{
     color: #0065FC;
-    font-size: 10px;
+    font-size: 15px;
     margin: 7px 0px 0px 5px;
 }
 #cards_block p{
     margin-top: 10px;
 }
 #cards_block .expand_button{
-    margin: 10px 0px 10px 0px;
+    margin: 10px 0px 30px 0px;
 }
 #cards_block .expand_button a{
     font-weight: bold;
-    font-size: 15px;
+    font-size: 20px;
     margin: 0px;
 }
 section p{
+    font-size: 20px;
     margin: 20px 0px 20px 0px;
 }
 #cards_aside img{
-    height: 120px;
+    height: 190px;
     width: 40%;
     border-radius: 15px 0px 0px 15px;
     object-fit: cover;
@@ -239,6 +243,7 @@ section p{
     border-radius: 20px;
 }
 #cards_aside figure{
+    height: 190px;
     display: flex;
     border: 5px #FFF solid;
     border-radius: 20px;
@@ -250,31 +255,34 @@ section p{
     margin: 0px 50px 0px 50px;
 }
 #cards_aside figcaption h3{
-    margin: 10px 0px 10px 10px;
+    margin: 0px 0px 10px 10px;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 25px;
     width: 70%;
 }
 #cards_aside figcaption p{
-    font-size: 12px;
+    font-size: 20px;
     margin: 0px 0px 10px 10px;
 }
-#cards_aside .star_rating{
-    color: #0065FC;
-    font-size: 10px;
-    margin: 0px 0px 10px 10px;
+#cards_block .star_rating{
+    font-size: 15px;
+    margin: 7px 0px 0px 5px;
 }
 #cards_aside figcaption{
     display: flex;
     flex-direction: column;
     width: 60%;
 }
+#cards_aside .star_rating{
+    margin-left: 10px;
+}
 #cards_aside .star_rating, #cards_block .star_rating{
+    color: #0065FC;
     margin-top: auto;
 }
 .cards_bottom{
     display: flex;
-    height: 500px;
+    height: 600px;
     width:50%;
 }
 .cards_bottom img{
@@ -322,6 +330,7 @@ section p{
 }
 .cards_bottom figcaption{
     font-weight: bold;
+    font-size: 25px;
     margin: 15px;
 }
 footer{
@@ -339,16 +348,102 @@ footer div ul{
     padding-left: 50px;
 }
 footer h2{
-    font-size: 16px;
+    font-size: 30px;
     font-weight: bold;
     padding-left: 50px;
 }
 footer li{
     padding-bottom: 10px;
-    font-size: 15px;
+    font-size: 20px;
 }
 #cards_block a:nth-child(1) i:nth-child(5), #cards_block a:nth-child(3) i:nth-child(5), #cards_block a:nth-child(5) i:nth-child(5), #cards_aside a:nth-child(2) i:nth-child(5), #cards_aside a:nth-child(3) i:nth-child(5), #cards_block a:nth-child(4) i:nth-child(5), #cards_block a:nth-child(4) i:nth-child(4){
     color: #d3d3d3;
+}
+@media screen and (max-width: 1921px)
+{
+    header img{
+        height: 50px;
+    }
+    nav li{
+        font-size: 15px;
+        padding: 70px 35px 0px 35px;
+    }
+    .search i{
+        height: 32px;
+        width: 32px;
+    }
+    input{
+        height: 26px;
+        width: auto;
+        font-size: 12px;
+    }
+    .search a{
+        height: 12px;
+        padding: 10px;
+    }
+    #filters i{
+        border-radius: 25px;
+        height: 20px;
+        width: 20px;
+    }
+    #filters li{
+        border-radius: 25px;
+        height: 40px;
+    }
+    .filter_select{
+        font-size: 14px;
+    }
+    #cards_block img{
+        height: 100px;
+    }
+    #cards_block figure{
+        height: 94%;
+    }
+    #cards_aside figure{
+        height: auto;
+    }
+    #cards_block figcaption h3{
+        font-size: 15px;
+    }
+    #cards_block figcaption p{
+        font-size: 12px;
+    }
+    #cards_block .star_rating{
+        font-size: 10px;
+    }
+    #cards_block .expand_button a{
+        font-size: 15px;
+    }
+    #cards_aside img{
+        height: 120px;
+    }
+    #cards_aside figcaption h3{
+        font-size: 15px;
+    }
+    #cards_aside figcaption p{
+        font-size: 12px;
+    }
+    #cards_aside .star_rating{
+        font-size: 10px;
+    }
+    section h1{
+        font-size: 18px;
+    }
+    section p{
+        font-size: 15px;
+    }
+    .cards_bottom{
+        height: 500px;
+    }
+    .cards_bottom figcaption{
+        font-size: 15px;
+    }
+    footer h2{
+        font-size: 16px;
+    }
+    footer li{
+        font-size: 15px;
+    }
 }
 @media screen and (max-width: 769px)
 {
