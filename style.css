@@ -16,7 +16,7 @@ header{
     display: flex;
     justify-content: space-between;
     height: auto;
-    margin: 0px 50px 20px 50px;
+    margin: 0px 100px 20px 100px;
 }
 header img{
     height: 100px;
@@ -48,7 +48,7 @@ a, a:visited{
     text-decoration: none;
 }
 #top{
-    margin: 0px 50px 0px 50px;
+    margin: 0px 100px 0px 100px;
 }
 section h1{
     display: flex;
@@ -154,7 +154,7 @@ input::placeholder{
 }
 #cards_main{
     display: flex;
-    margin: 0px 50px 10px 50px;
+    margin: 0px 100px 10px 100px;
 }
 #cards_block .cards_section{
     display: flex;
@@ -191,7 +191,7 @@ input::placeholder{
 #cards_block figcaption{
     margin: 0px 5px 5px 5px;
 }
-#cards_block figcaption h3{
+#cards_block figcaption h2{
     font-weight: bold;
     font-size: 25px;
     margin: 6px 0px 5px 5px;
@@ -225,7 +225,6 @@ section p{
     width: 40%;
     border-radius: 15px 0px 0px 15px;
     object-fit: cover;
-    display: block;
 }
 #cards_aside{
     background: #F2F2F2;
@@ -252,9 +251,12 @@ section p{
     box-shadow: 0px 0px 10px #c0c0c0;
 }
 #cards_other{
-    margin: 0px 50px 0px 50px;
+    margin: 0px 100px 0px 100px;
 }
-#cards_aside figcaption h3{
+#cards_other h1{
+    margin-bottom: 40px;
+}
+#cards_aside figcaption h2{
     margin: 0px 0px 10px 10px;
     font-weight: bold;
     font-size: 25px;
@@ -345,12 +347,12 @@ footer div{
 }
 footer div ul{
     list-style: none;
-    padding-left: 50px;
+    padding-left: 100px;
 }
 footer h2{
     font-size: 30px;
     font-weight: bold;
-    padding-left: 50px;
+    padding-left: 100px;
 }
 footer li{
     padding-bottom: 10px;
@@ -361,8 +363,14 @@ footer li{
 }
 @media screen and (max-width: 1921px)
 {
+    header {
+        margin: 0px 50px 20px 50px;
+    }
     header img{
         height: 50px;
+    }
+    #top{
+        margin: 0px 50px 0px 50px;
     }
     nav li{
         font-size: 15px;
@@ -393,6 +401,9 @@ footer li{
     .filter_select{
         font-size: 14px;
     }
+    #cards_main{
+        margin: 0px 50px 10px 50px;
+    }
     #cards_block img{
         height: 100px;
     }
@@ -402,7 +413,7 @@ footer li{
     #cards_aside figure{
         height: auto;
     }
-    #cards_block figcaption h3{
+    #cards_block figcaption h2{
         font-size: 15px;
     }
     #cards_block figcaption p{
@@ -417,7 +428,7 @@ footer li{
     #cards_aside img{
         height: 120px;
     }
-    #cards_aside figcaption h3{
+    #cards_aside figcaption h2{
         font-size: 15px;
     }
     #cards_aside figcaption p{
@@ -432,6 +443,12 @@ footer li{
     section p{
         font-size: 15px;
     }
+    #cards_other{
+        margin: 0px 50px 0px 50px;
+    }
+    #cards_other h1{
+        margin-bottom: 30px;
+    }
     .cards_bottom{
         height: 500px;
     }
@@ -444,15 +461,21 @@ footer li{
     footer li{
         font-size: 15px;
     }
+    footer div ul{
+        padding-left: 50px;
+    }
+    footer h2{
+        padding-left: 50px;
+    }
 }
 @media screen and (max-width: 769px)
 {
     header{
-        margin: 0px 20px 20px 20px;
+        margin: 0px 30px 20px 30px;
         flex-wrap: wrap;
     }
     #top{
-        margin: 30px 20px 0px 20px;
+        margin: 30px 30px 0px 30px;
     }
     section h1{
         margin-bottom: 0px;
@@ -488,12 +511,13 @@ footer li{
         flex-direction: column-reverse;
         align-items: center;
         margin: 0px;
-        padding: 20px 20px 0px 20px;
+        padding: 20px 30px 0px 30px;
     }
     #cards_block{
         margin: 0px;
-        padding: 20px;
+        padding: 0px;
         width: auto;
+        background: none;
     }
     #cards_block a{
         width: 31%;
@@ -505,8 +529,7 @@ footer li{
     #cards_aside{
         margin: 0px 0px 20px 0px;
         padding: 20px;
-        width: 100%;
-        max-width: 688px;
+        width: auto;
     }
     #cards_aside .cards_section{
         flex-direction: row;
@@ -527,17 +550,18 @@ footer li{
         height: 100%;
     }
     #cards_aside img{
-        width: auto;
+        width: 203px;
+        height: 100px;
         border-radius: 15px 15px 0px 0px;
     }
     #cards_aside h1, #cards_block h1{
         margin-bottom: 20px;
     }
-    #cards_other{
-        margin: 30px 20px 0px 20px;
-    }
-    #cards_other h1{
+    #cards_block .expand_button {
         margin-bottom: 20px;
+    }
+    #cards_other{
+        margin: 30px 30px 0px 30px;
     }
     #cards_secondary{
         flex-direction: column;
@@ -565,7 +589,7 @@ footer li{
         height: 45%;
     }
     footer div ul, footer div h2{
-        padding-left: 20px;
+        padding-left: 30px;
     }
 }
 @media screen and (max-width: 601px)
@@ -627,7 +651,7 @@ footer li{
     #top{
         margin: 0px 20px 0px 20px;
     }
-    section h1{
+    #top h1{
         margin-bottom: 0px;
     }
     .search a i{
@@ -658,6 +682,9 @@ footer li{
     }
     #info p{
         margin-bottom: 0px;
+    }
+    #cards_main {
+        padding: 20px 20px 0px 20px;
     }
     #cards_block .cards_section{
         flex-direction: column;
@@ -696,6 +723,7 @@ footer li{
         height: auto;
     }
     #cards_aside img {
+        height: 120px;
         width: 40%;
         border-radius: 15px 0px 0px 15px;
     }
@@ -704,9 +732,6 @@ footer li{
     }
     #cards_other{
         margin: 10px 20px 0px 20px;
-    }
-    #cards_other h1{
-        margin-bottom: 20px;
     }
     .cards_bottom{
         flex-direction: column;
