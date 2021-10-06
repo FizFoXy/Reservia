@@ -31,7 +31,7 @@ nav ul{
 }
 nav li{
     font-size: 30px;
-    padding: 130px 35px 0px 35px;
+    padding: 100px 35px 0px 35px;
 }
 nav li:hover{
     color: #0065FC;
@@ -51,11 +51,7 @@ a, a:visited{
     margin: 0px 100px 0px 100px;
 }
 section h1{
-    display: flex;
-    justify-content: space-between;
     font-size: 30px;
-    margin-top: 0px;
-    margin-bottom: 20px;
 }
 section .cards_section a p{
     font-size: 15px;
@@ -191,7 +187,7 @@ input::placeholder{
 #cards_block figcaption{
     margin: 0px 5px 5px 5px;
 }
-#cards_block figcaption h2{
+#cards_block figcaption h3{
     font-weight: bold;
     font-size: 25px;
     margin: 6px 0px 5px 5px;
@@ -253,10 +249,11 @@ section p{
 #cards_other{
     margin: 0px 100px 0px 100px;
 }
-#cards_other h1{
-    margin-bottom: 40px;
+h2{
+    margin: 0px 0px 40px 0px;
+    font-size: 30px;
 }
-#cards_aside figcaption h2{
+#cards_aside figcaption h3{
     margin: 0px 0px 10px 10px;
     font-weight: bold;
     font-size: 25px;
@@ -349,7 +346,7 @@ footer div ul{
     list-style: none;
     padding-left: 100px;
 }
-footer h2{
+footer h3{
     font-size: 30px;
     font-weight: bold;
     padding-left: 100px;
@@ -402,7 +399,7 @@ footer li{
         font-size: 14px;
     }
     #cards_main{
-        margin: 0px 50px 10px 50px;
+        margin: 0px 50px 0px 50px;
     }
     #cards_block img{
         height: 100px;
@@ -410,10 +407,14 @@ footer li{
     #cards_block figure{
         height: 94%;
     }
+    #cards_aside h2{
+        display: flex;
+        justify-content: space-between;
+    }
     #cards_aside figure{
         height: auto;
     }
-    #cards_block figcaption h2{
+    #cards_block figcaption h3{
         font-size: 15px;
     }
     #cards_block figcaption p{
@@ -428,7 +429,7 @@ footer li{
     #cards_aside img{
         height: 120px;
     }
-    #cards_aside figcaption h2{
+    #cards_aside figcaption h3{
         font-size: 15px;
     }
     #cards_aside figcaption p{
@@ -446,8 +447,9 @@ footer li{
     #cards_other{
         margin: 0px 50px 0px 50px;
     }
-    #cards_other h1{
-        margin-bottom: 30px;
+    h2{
+        margin: 0px 0px 30px 0px;
+        font-size: 18px;
     }
     .cards_bottom{
         height: 500px;
@@ -455,16 +457,14 @@ footer li{
     .cards_bottom figcaption{
         font-size: 15px;
     }
-    footer h2{
+    footer h3{
         font-size: 16px;
+        padding-left: 50px;
     }
     footer li{
         font-size: 15px;
     }
     footer div ul{
-        padding-left: 50px;
-    }
-    footer h2{
         padding-left: 50px;
     }
 }
@@ -529,7 +529,8 @@ footer li{
     #cards_aside{
         margin: 0px 0px 20px 0px;
         padding: 20px;
-        width: auto;
+        width: 100%;
+        box-sizing: border-box;
     }
     #cards_aside .cards_section{
         flex-direction: row;
@@ -550,12 +551,12 @@ footer li{
         height: 100%;
     }
     #cards_aside img{
-        width: 203px;
+        width: 100%;
         height: 100px;
         border-radius: 15px 15px 0px 0px;
     }
-    #cards_aside h1, #cards_block h1{
-        margin-bottom: 20px;
+    h2{
+        margin: 0px 0px 20px 0px;
     }
     #cards_block .expand_button {
         margin-bottom: 20px;
@@ -588,7 +589,7 @@ footer li{
     .cards_bottom_aside a:nth-child(2){
         height: 45%;
     }
-    footer div ul, footer div h2{
+    footer div ul, footer div h3{
         padding-left: 30px;
     }
 }
@@ -639,7 +640,7 @@ footer li{
         margin: 0px 20px 0px 20px;
         width: auto;
     }
-    footer div ul, footer div h2{
+    footer div ul, footer div h3{
         padding-left: 0px;
     }
     #cards_secondary{
@@ -650,9 +651,6 @@ footer li{
 {
     #top{
         margin: 0px 20px 0px 20px;
-    }
-    #top h1{
-        margin-bottom: 0px;
     }
     .search a i{
         display: flex;
@@ -710,6 +708,7 @@ footer li{
         padding: 20px;
         margin: 0px 0px 25px 0px;
         width: 100%;
+        box-sizing: initial;
     }
     #cards_aside a{
         margin-bottom: 20px;
@@ -726,9 +725,6 @@ footer li{
         height: 120px;
         width: 40%;
         border-radius: 15px 0px 0px 15px;
-    }
-    #cards_aside h1, #cards_block h1{
-        margin-bottom: 20px;
     }
     #cards_other{
         margin: 10px 20px 0px 20px;
