@@ -172,6 +172,8 @@ input::placeholder{
     display: block;
 }
 #cards_block figure{
+    display: flex;
+    flex-direction: column;
     height: 300px;
     margin: 0px;
     border: 5px #FFF solid;
@@ -185,7 +187,11 @@ input::placeholder{
     border-radius: 20px;
 }
 #cards_block figcaption{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin: 0px 5px 5px 5px;
+    height: 50%;
 }
 #cards_block figcaption h3{
     font-weight: bold;
@@ -257,7 +263,7 @@ h2{
     margin: 0px 0px 10px 10px;
     font-weight: bold;
     font-size: 25px;
-    width: 70%;
+    width: 80%;
 }
 #cards_aside figcaption p{
     font-size: 20px;
@@ -279,55 +285,57 @@ h2{
     color: #0065FC;
     margin-top: auto;
 }
-#cards_bottom img{
-    width: 100%;
-    object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
-    overflow: hidden;
-    flex: auto;
-    height: 400px;
-}
 #cards_bottom{
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 #cards_bottom a{
-    border-radius: 20px;
+    height: 800px;
     width: 23%;
+    border-radius: 20px;
 }
-.cards_bottom:nth-child(1){
-    margin-right: 30px;
-}
-.cards_bottom_aside{
+#cards_bottom .cards_bottom_aside{
+    height: 800px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 23%;
 }
 #cards_bottom .cards_bottom_aside a{
-    margin-right: 0px;
     width: 100%;
 }
-.cards_bottom_aside a:nth-child(1){
-    margin-bottom: auto;
-    height: 60%;
-}
-.cards_bottom_aside a:nth-child(2){
-    height: 35%;
-}
-#cards_bottom figure, .cards_bottom_aside figure{
+#cards_bottom figure{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
     height: 100%;
     margin: 0px;
-    box-shadow: 0px 0px 10px #c0c0c0;
     border-radius: 20px;
+    box-shadow: 0px 0px 10px #c0c0c0;
+}
+#cards_bottom img{
+    height: 80%;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+    overflow: hidden;
+    flex: auto;
 }
 #cards_bottom figcaption{
+    box-sizing: border-box;
+    height: 60px;
+    padding: 15px 15px 15px 15px;
+}
+#cards_bottom figcaption p{
+    margin: 0px;
     font-weight: bold;
     font-size: 25px;
-    margin: 15px;
+}
+#cards_bottom .cards_bottom_aside a:nth-child(1){
+    height: 58%;
+}
+#cards_bottom .cards_bottom_aside a:nth-child(2){
+    height: 38%;
 }
 footer{
     display: flex;
@@ -411,48 +419,43 @@ footer li{
     #cards_aside figure{
         height: auto;
     }
-    #cards_block figcaption h3{
+    #cards_block figcaption h3, #cards_aside figcaption h3, #cards_block .expand_button a, section p{
         font-size: 15px;
     }
     #cards_block figcaption p{
         font-size: 12px;
     }
-    #cards_block .star_rating{
+    #cards_block .star_rating, #cards_aside .star_rating{
         font-size: 10px;
-    }
-    #cards_block .expand_button a{
-        font-size: 15px;
     }
     #cards_aside img{
         height: 120px;
     }
-    #cards_aside figcaption h3{
-        font-size: 15px;
-    }
     #cards_aside figcaption p{
         font-size: 12px;
-    }
-    #cards_aside .star_rating{
-        font-size: 10px;
     }
     section h1{
         font-size: 18px;
     }
-    section p{
-        font-size: 15px;
-    }
     #cards_other{
         margin: 0px 50px 0px 50px;
     }
-    #cards_bottom img {
-        height: 300px;
+    #cards_bottom a{
+        height: 600px;
+    }
+    #cards_bottom .cards_bottom_aside{
+        height: 600px;
+    }
+    #cards_bottom figcaption{
+        height: 45px;
+        padding: 12px 15px 10px 15px;
+    }
+    #cards_bottom figcaption p{
+        font-size: 16px;
     }
     h2{
         margin: 0px 0px 30px 0px;
         font-size: 18px;
-    }
-    #cards_bottom figcaption{
-        font-size: 15px;
     }
     footer h3{
         font-size: 16px;
@@ -463,6 +466,78 @@ footer li{
     }
     footer div ul{
         padding-left: 50px;
+    }
+}
+@media screen and (max-width: 1163px){
+    #cards_bottom figcaption{
+        height: 60px;
+        padding: 10px 15px 10px 15px;
+    }
+    #cards_bottom img{
+        height: 60%;
+    }
+}
+@media screen and (max-width: 1025px){
+    .search p{
+        margin: 25px 0px 25px 0px;
+    }
+    #cards_main{
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 0px;
+        padding: 20px 30px 0px 30px;
+    }
+    #cards_block{
+        padding: 30px 30px 0px 30px;
+        margin: 30px 0px;
+        width: auto;
+    }
+    #cards_block a{
+        width: 31%;
+        margin: 0px 0px 20px 0px;
+    }
+    section p{
+        margin: 10px 0px 25px 0px;
+    }
+    #cards_aside{
+        margin: 0px 0px 20px 0px;
+        padding: 30px 30px 40px 30px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    #cards_aside .cards_section{
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    #cards_aside a{
+        margin-bottom: 0px;
+        width: 31%;
+    }
+    #cards_aside figure{
+        flex-direction: column;
+        height: 97%;
+    }
+    #cards_aside figcaption{
+        width: 100%;
+        height: 100%;
+    }
+    #cards_aside figcaption h3 {
+        margin-top: 5px;
+    }
+    #cards_aside .star_rating{
+        margin-bottom: 5px;
+    }
+    #cards_aside img{
+        width: 100%;
+        height: 100px;
+        border-radius: 15px 15px 0px 0px;
+    }
+    h2{
+        margin: 0px 0px 20px 0px;
+    }
+    #cards_block .expand_button {
+        margin-bottom: 20px;
     }
 }
 @media screen and (max-width: 769px)
@@ -504,90 +579,36 @@ footer li{
     #info p{
         margin-bottom: 0px;
     }
-    #cards_main{
-        flex-direction: column-reverse;
-        align-items: center;
-        margin: 0px;
-        padding: 20px 30px 0px 30px;
-    }
     #cards_block{
         margin: 0px;
         padding: 0px;
         width: auto;
         background: none;
     }
-    #cards_block a{
-        width: 31%;
-        margin: 0px 0px 20px 0px;
-    }
-    section p{
-        margin: 10px 0px 25px 0px;
-    }
-    #cards_aside{
-        margin: 0px 0px 20px 0px;
-        padding: 20px;
-        width: 100%;
-        box-sizing: border-box;
-    }
-    #cards_aside .cards_section{
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        margin-bottom: 20px;
-    }
-    #cards_aside a{
-        margin-bottom: 0px;
-        width: 31%;
-    }
-    #cards_aside figure{
-        flex-direction: column;
-        height: 97%;
-    }
-    #cards_aside figcaption {
-        width: 100%;
-        height: 100%;
-    }
-    #cards_aside img{
-        width: 100%;
-        height: 100px;
-        border-radius: 15px 15px 0px 0px;
-    }
-    h2{
-        margin: 0px 0px 20px 0px;
-    }
-    #cards_block .expand_button {
-        margin-bottom: 20px;
-    }
     #cards_other{
-        margin: 30px 30px 0px 30px;
-    }
-    #cards_bottom{
-        width:100%;
+        margin: 0px 30px 0px 30px;
     }
     #cards_bottom a{
-        margin-bottom: 20px;
+        height: 400px;
+        width: 32%;
+        margin-bottom: 25px;
     }
-    #cards_bottom img {
-        height: 200px;
+    #cards_bottom .cards_bottom_aside{
+        height: 400px;
+        width: 64%;
+        flex-direction: row;
     }
-    .cards_bottom:nth-child(1){
-        margin-right: 0px;
+    #cards_bottom .cards_bottom_aside a{
+        width: 47%;
     }
-    .cards_bottom_aside a{
-        margin-right: 0px;
-        width: 100%;
-        margin-bottom: 20px;
-    }
-    .cards_bottom_aside a:nth-child(1){
-        margin-bottom: auto;
-        height: 48%;
-    }
-    .cards_bottom_aside a:nth-child(2){
-        margin-bottom: 0px;
-        height: 48%;
+    #cards_bottom .cards_bottom_aside a:nth-child(1), #cards_bottom .cards_bottom_aside a:nth-child(2){
+        height: 100%;
     }
     footer div ul, footer div h3{
         padding-left: 30px;
+    }
+    footer{
+        margin-top: 30px;
     }
 }
 @media screen and (max-width: 601px)
@@ -625,8 +646,60 @@ footer li{
     nav ul{
         padding-top: 20px;
     }
+    #cards_aside{
+        padding-bottom: 20px;
+    }
+    #cards_aside .cards_section{
+        flex-direction: column;
+    }
+    #cards_aside a{
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    #cards_aside figure{
+        flex-direction: row;
+        height: 97%;
+    }
+    #cards_aside figcaption{
+        width: 60%;
+        height: 120px;
+    }
+    #cards_aside img{
+        width: 40%;
+        height: 120px;
+        border-radius: 15px 0px 0px 15px;
+    }
     #cards_block a {
         width: 48%;
+    }
+    #cards_bottom a{
+        height: 300px;
+        width: 48%;
+        margin-bottom: 25px;
+    }
+    #cards_bottom .cards_bottom_aside{
+        height: 300px;
+        width: 100%;
+    }
+    #cards_bottom .cards_bottom_aside a{
+        width: 48%;
+    }
+    #cards_bottom figcaption{
+        height: 45px;
+        padding: 12px 15px 10px 15px;
+    }
+    #cards_bottom a:nth-child(1){
+        order: 1;
+    }
+    #cards_bottom .cards_bottom_aside:nth-child(2){
+        order: 3;
+        margin-bottom: 25px;
+    }
+    #cards_bottom a:nth-child(3){
+        order: 2;
+    }
+    #cards_bottom .cards_bottom_aside:nth-child(4){
+        order: 4;
     }
     footer{
         flex-direction: column;
@@ -639,6 +712,12 @@ footer li{
     }
     footer div ul, footer div h3{
         padding-left: 0px;
+    }
+}
+@media screen and (max-width: 523px){
+    #cards_bottom figcaption{
+        height: 60px;
+        padding: 10px 15px 10px 15px;
     }
 }
 @media screen and (max-width: 426px)
@@ -694,9 +773,6 @@ footer li{
     section p{
         margin: 10px 0px 25px 0px;
     }
-    #cards_aside .cards_section {
-        flex-direction: column;
-    }
     #cards_aside{
         border-radius: 0px;
         padding: 20px;
@@ -704,39 +780,26 @@ footer li{
         width: 100%;
         box-sizing: initial;
     }
-    #cards_aside a{
-        margin-bottom: 20px;
-        width: auto;
-    }
-    #cards_aside figure {
-        flex-direction: row;
-    }
-    #cards_aside figcaption {
-        width: 60%;
-        height: auto;
-    }
-    #cards_aside img {
-        height: 120px;
-        width: 40%;
-        border-radius: 15px 0px 0px 15px;
-    }
-    #cards_other{
-        margin: 10px 20px 0px 20px;
-    }
-    #cards_bottom{
-        flex-direction: column;
-        height: auto;
-        width:100%;
+    #cards_bottom a:nth-child(1), #cards_bottom .cards_bottom_aside:nth-child(2), #cards_bottom a:nth-child(3), #cards_bottom .cards_bottom_aside:nth-child(4){
+        order: unset;
     }
     #cards_bottom a{
-        width: 100%;
-        height: 150px;
-        margin-bottom: 20px;
-    }
-    .cards_bottom_aside{
+        height: 200px;
         width: 100%;
     }
-    .cards_bottom_aside a:nth-child(1){
-        margin-bottom: 20px;
+    #cards_bottom .cards_bottom_aside{
+        height: auto;
+        width: 100%;
+        flex-direction: column;
+    }
+    #cards_bottom .cards_bottom_aside a{
+        width: 100%;
+    }
+    #cards_bottom .cards_bottom_aside a:nth-child(1), #cards_bottom .cards_bottom_aside a:nth-child(2) {
+        height: 200px;
+    }
+    #cards_bottom figcaption{
+        height: 45px;
+        padding: 12px 15px 10px 15px;
     }
 }
