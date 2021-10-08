@@ -315,7 +315,6 @@ h2{
     box-shadow: 0px 0px 10px #c0c0c0;
 }
 #cards_bottom img{
-    height: 80%;
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
     overflow: hidden;
@@ -472,9 +471,6 @@ footer li{
     #cards_bottom figcaption{
         height: 60px;
         padding: 10px 15px 10px 15px;
-    }
-    #cards_bottom img{
-        height: 60%;
     }
 }
 @media screen and (max-width: 1025px){
