@@ -319,6 +319,7 @@ h2{
     object-fit: cover;
     overflow: hidden;
     flex: auto;
+    height: 60%;
 }
 #cards_bottom figcaption{
     box-sizing: border-box;
@@ -330,11 +331,18 @@ h2{
     font-weight: bold;
     font-size: 25px;
 }
-#cards_bottom .cards_bottom_aside a:nth-child(1){
-    height: 58%;
+/*hauteur des cartes dans la section activités*/
+#cards_bottom .cards_bottom_aside:nth-child(2) a:nth-child(1){
+    height: 57%;
 }
-#cards_bottom .cards_bottom_aside a:nth-child(2){
-    height: 38%;
+#cards_bottom .cards_bottom_aside:nth-child(2) a:nth-child(2){
+    height: 37%;
+}
+#cards_bottom .cards_bottom_aside:nth-child(4) a:nth-child(1){
+    height: 47%;
+}
+#cards_bottom .cards_bottom_aside:nth-child(4) a:nth-child(2){
+    height: 47%;
 }
 footer{
     display: flex;
@@ -359,11 +367,11 @@ footer li{
     padding-bottom: 10px;
     font-size: 20px;
 }
+/*couleur blanche des étoiles*/
 #cards_block a:nth-child(1) i:nth-child(5), #cards_block a:nth-child(3) i:nth-child(5), #cards_block a:nth-child(5) i:nth-child(5), #cards_aside a:nth-child(2) i:nth-child(5), #cards_aside a:nth-child(3) i:nth-child(5), #cards_block a:nth-child(4) i:nth-child(5), #cards_block a:nth-child(4) i:nth-child(4){
     color: #d3d3d3;
 }
-@media screen and (max-width: 1921px)
-{
+@media screen and (max-width: 1921px){
     header {
         margin: 0px 50px 20px 50px;
     }
@@ -468,12 +476,14 @@ footer li{
     }
 }
 @media screen and (max-width: 1163px){
+    /*taille de la figcaption dans la partie activités*/
     #cards_bottom figcaption{
         height: 60px;
         padding: 10px 15px 10px 15px;
     }
 }
 @media screen and (max-width: 1025px){
+    /*breakpoint small desktop car cartes trop écrasées*/
     .search p{
         margin: 25px 0px 25px 0px;
     }
@@ -536,8 +546,8 @@ footer li{
         margin-bottom: 20px;
     }
 }
-@media screen and (max-width: 769px)
-{
+@media screen and (max-width: 769px){
+    /*breakpoint tablette*/
     header{
         margin: 0px 30px 20px 30px;
         flex-wrap: wrap;
@@ -597,7 +607,7 @@ footer li{
     #cards_bottom .cards_bottom_aside a{
         width: 47%;
     }
-    #cards_bottom .cards_bottom_aside a:nth-child(1), #cards_bottom .cards_bottom_aside a:nth-child(2){
+    #cards_bottom .cards_bottom_aside:nth-child(2) a:nth-child(1), #cards_bottom .cards_bottom_aside:nth-child(2) a:nth-child(2), #cards_bottom .cards_bottom_aside:nth-child(4) a:nth-child(1), #cards_bottom .cards_bottom_aside:nth-child(4) a:nth-child(2){
         height: 100%;
     }
     footer div ul, footer div h3{
@@ -607,8 +617,7 @@ footer li{
         margin-top: 30px;
     }
 }
-@media screen and (max-width: 601px)
-{
+@media screen and (max-width: 601px){
     header{
         flex-direction: column;
         margin: 0px 0px 20px 0px;
@@ -684,6 +693,7 @@ footer li{
         height: 45px;
         padding: 12px 15px 10px 15px;
     }
+    /*ordre des cartes*/
     #cards_bottom a:nth-child(1){
         order: 1;
     }
@@ -710,14 +720,13 @@ footer li{
         padding-left: 0px;
     }
 }
-@media screen and (max-width: 523px){
+@media screen and (max-width: 569px){
     #cards_bottom figcaption{
         height: 60px;
         padding: 10px 15px 10px 15px;
     }
 }
-@media screen and (max-width: 426px)
-{
+@media screen and (max-width: 426px){
     #top{
         margin: 0px 20px 0px 20px;
     }
@@ -776,6 +785,10 @@ footer li{
         width: 100%;
         box-sizing: initial;
     }
+    #cards_other {
+        margin: 0px 20px 0px 20px;
+    }
+    /*enlever l'ordre*/
     #cards_bottom a:nth-child(1), #cards_bottom .cards_bottom_aside:nth-child(2), #cards_bottom a:nth-child(3), #cards_bottom .cards_bottom_aside:nth-child(4){
         order: unset;
     }
